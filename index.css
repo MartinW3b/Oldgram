@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper::-webkit-scrollbar{
+    display: none;
+  }
+
+.iphone {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42vh;
+    height: 85vh;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%; /*   making position absolute center */
+    left: 50%; /*   making position absolute center */
+    transform: translate(-50%, -50%); /*   making position absolute center */
+    width: 36.4vh;
+    height: 64vh;
+
+    overflow: scroll;
+}
+
+.container-top {
+ /*   width: 300px; */
+    width: 95%; 
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.container {
+ /*   width: 450px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    width: 11%;
+    height: 11%;
+    margin: 10px 10px 0 0;
+    border-radius: 50px;
+}
+
+.logo {
+  /*  width: 140px;
+    height: 70px; */
+    width: 40%;
+}
+
+.above-picture {
+    display: flex;
+}
+
+.profile-image {
+    width: 11%;
+    height: 11%;
+    margin: 10px 10px 0 10px;
+    border-radius: 50px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.location {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.like-icon, 
+.comment-icon, 
+.dm-icon {
+    width: 7%;
+    margin: 8px 0px 0 15px;
+}
+
+.like-icon:hover, 
+.comment-icon:hover, 
+.dm-icon:hover {
+    opacity: 0.5;
+    color: red;
+}
+
+.likes,
+.comments {
+    margin-left: 15px;
+}
+
+.comment-name, 
+.likes {
+    font-weight: bold;
+}
+
+.liked {
+    background-image: url("images/icon-heart-liked.png");
+    background-size: cover;
+    z-index: 2;
+    width: 7%;
+    margin: 8px 0px 0 15px;
+}
